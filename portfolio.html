@@ -5,62 +5,119 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Абдыжапаров Темирлан — Newbie Frontend Developer</title>
     <style>
-    body {
-        font-family: 'Segoe UI', system-ui, sans-serif;
-        background: #0a0a1f;
-        color: #e0e0ff;
-        margin: 0;
-        padding: 0;
-        line-height: 1.7;
-    }
-    .container {
-        max-width: 950px;
-        margin: 0 auto;
-        padding: 40px 20px;
-    }
-    header {
-        text-align: center;
-        padding: 90px 0 70px;
-    }
-    h1 {
-        font-size: 3.2rem;
-        margin: 0 0 10px 0;
-        color: #d08cff;
-    }
-    h2 {
-        color: #b14cff;
-        margin-top: 50px;
-    }
-    .project {
-        background: #1a1633;
-        padding: 30px;
-        border-radius: 16px;
-        margin-bottom: 35px;
-        border-left: 5px solid #b14cff;
-    }
-    a {
-        color: #b14cff;
-        text-decoration: none;
-        font-weight: 500;
-    }
-    a:hover {
-        color: #d08cff;
-        text-decoration: underline;
-    }
-    button {
-        background: #b14cff;
-        color: white;
-        border: none;
-        padding: 14px 28px;
-        border-radius: 10px;
-        font-size: 1.1rem;
-        cursor: pointer;
-        margin-top: 10px;
-    }
-    button:hover {
-        background: #d08cff;
-    }
-</style>
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            background: #0a0a1f;
+            color: #e0e0ff;
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 80px 0 60px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin: 0 0 10px 0;
+            color: #d08cff;
+        }
+
+        h2 {
+            color: #b14cff;
+            margin-top: 50px;
+            font-size: 1.8rem;
+        }
+
+        .project {
+            background: #1a1633;
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            border-left: 5px solid #b14cff;
+        }
+
+        a {
+            color: #b14cff;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            color: #d08cff;
+            text-decoration: underline;
+        }
+
+        button {
+            background: #b14cff;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background: #d08cff;
+        }
+
+        /* ================= АДАПТИВНОСТЬ ================= */
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 15px;
+            }
+
+            header {
+                padding: 60px 0 40px;
+            }
+
+            h1 {
+                font-size: 2.3rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+                margin-top: 40px;
+            }
+
+            .project {
+                padding: 20px;
+                margin-bottom: 25px;
+            }
+
+            p {
+                font-size: 1.05rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.1rem;
+            }
+
+            h2 {
+                font-size: 1.45rem;
+            }
+
+            .project {
+                padding: 18px;
+            }
+
+            .container {
+                padding: 15px 12px;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -70,53 +127,60 @@
             <p>20 лет • Бишкек • Студент ИИТ КГТУ им. И. Раззакова</p>
         </header>
 
-        <section class="section">
+        <section>
             <h2>Обо мне</h2>
             <p>Привет, Я Темирлан, студент 2 курса КГТУ им И. Раззакова в ИИТ по специальности «Прикладная информатика в компьютерном дизайне».</p>
             <p>Активно изучаю Frontend-разработку. Самостоятельно создал музыкальный сервис Tea Music, где реализовал авторизацию, плеер, чарты и подключение к базе данных.</p>
             <p>Быстро учусь и хочу получить практический опыт в сфере айти.</p>
         </section>
 
-        <section class="section">
-            <h2>Навыки(базовые)</h2>
+        <section>
+            <h2>Навыки (базовые)</h2>
             <p>HTML5 • CSS3 • JavaScript • MySQL • Git • Python • JAVA</p>
         </section>
 
-        <section class="section">
+        <section>
             <h2>Проекты</h2>
+            
             <div class="project">
                 <h3>Tea Music — Музыкальный сервис</h3>
                 <p>Полноценное веб-приложение для прослушивания музыки с современным дизайном.</p>
                 <p><strong>Реализовано:</strong> авторизация, draggable плеер, чарты, работа с MySQL.</p>
                 <p><strong>Технологии:</strong> HTML, CSS, JavaScript, Node.js, MySQL</p>
-               
+                <p><strong>Ссылка на проект:</strong> 
+                    <a href="https://github.com/teachaycos/Tea-music.git" target="_blank">
+                        Открыть в GitHub
+                    </a>
+                </p>
+            </div>
+
             <div class="project">
                 <h3>Мини-мод для визуальной новеллы (Steam)</h3>
                 <p>Разработал мини-мод с визуальными изменениями для одной визуальной новеллы.</p>
                 <p>Применял знания Python и Ren'Py для создания и интеграции мода.</p>
                 <p><strong>Технологии:</strong> Python, Ren'Py</p>
-                <p> <strong>Ссылка на мод:</strong> 
-                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2721000238" 
-                    target="_blank" 
-                    style="color: #ff00ff;">
-                    Открыть в Steam Workshop
+                <p><strong>Ссылка на мод:</strong> 
+                    <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2721000238" target="_blank">
+                        Открыть в Steam Workshop
                     </a>
                 </p>
+            </div>
 
-                <div class="project">
-                <h3>Мини практика по Python и JAVA задания универа</h3>
-                <p>По ходу обучения писал разные код программы по Джаве и Питону практиковал на учебе и дома</p>
-                <P>Применял JAVA and Python для выполнения заданий и делал отчеты</P>
-                <P><strong>Технологии:</strong> Python, JAVA</P>
+            <div class="project">
+                <h3>Практика по Python и Java</h3>
+                <p>Выполнял различные задания университета и самостоятельно практиковался в программировании.</p>
+                <p><strong>Технологии:</strong> Python, JAVA</p>
             </div>
         </section>
 
-        <section class="section">
+        <section>
             <h2>Контакты</h2>
-            <p>Telegram: @Ash_with_misogyny<br>
-               Email: abdytima56@gmail.com<br>
-               Город: Бишкек
-               Номер: +996704120522 и +996508221205</p>
+            <p>
+                Telegram: <a href="https://t.me/Ash_with_misogyny">@Ash_with_misogyny</a><br>
+                Email: <a href="mailto:abdytima56@gmail.com">abdytima56@gmail.com</a><br>
+                Город: Бишкек<br>
+                Телефон: +996 704 120 522
+            </p>
         </section>
     </div>
 </body>
